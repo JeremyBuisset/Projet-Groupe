@@ -8,7 +8,9 @@ body {
 header {
     width: 100%;
     background-image: url("pictures/Bannière.png");
-    height: 150px;
+    height: 176px;
+    padding: 0;
+    margin: 0;
 }
 
 footer {
@@ -19,7 +21,6 @@ footer {
 nav {
     width: 100%;
     background: #0000d8;
-    z-index: 1;
 }
 
 #banniere{
@@ -45,6 +46,16 @@ nav {
     font-family: 'Monda', sans-serif;
 
 }
+
+.desc-style{
+    color: #0000a8;
+    padding: 1% 1% 1% 1%;
+    font-family: 'Monda', sans-serif;
+    text-align: center;
+    font-size: 20px;
+
+}
+
 
 #hamburger-content li{
     display: inline-block;
@@ -138,7 +149,7 @@ nav {
     border-radius: 0.5em;
     background: #8888cd;
     padding: 5px;
-    width: 100px;
+    width: 150px;
     text-align: center;
     box-shadow:2px 1px 1px rgba(0,0,0,0.4);
 }
@@ -147,6 +158,80 @@ nav {
     background: #7070a9;
     color: #0314ec;
     border-color: #0000b4;
+}
+* {
+    box-sizing: border-box;
+    padding: 0
+}
+
+ul, ol {
+    list-style: none
+}
+.main {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    color: #fff;
+    top:0;
+
+}
+.slider {
+    position: relative
+}
+.slider .slider-parent {
+    padding: 0;
+    display: flex
+}
+.slider .slider-parent .images-list {
+    background-size: cover;
+}
+.slider .slider-parent .images-list:first-of-type, .slider .slider-parent .images-list:last-of-type {
+    background-image: url(pictures/Speecar-Kesta.jpg)
+}
+.slider .slider-parent .images-list:nth-of-type(2) {
+    background-image: url(pictures/Speedcar-KestaII.jpg)
+}
+.slider .slider-parent .images-list:nth-of-type(3) {
+    background-image: url(pictures/Speedcar-KestaIII.jpg)
+}
+.slider .slider-parent .images-list:nth-of-type(4) {
+    background-image: url(pictures/Speecar-Kesta.jpg)
+}
+.slider .buttom-circles {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 20px;
+    color: #0000d8;
+}
+.slider .buttom-circles .buttom-circles-list {
+    display: inline-block;
+}
+.slider .buttom-circles .buttom-circles-list:hover .fa:before, .slider
+.buttom-circles .buttom-circles-list.slider-active .fa:before {
+    content: "\f111";
+}
+.slider > .fa {
+    position: absolute;
+    top: 45%;
+    color: #0000d8 ;
+}
+.slider > .fa:first-of-type { right: 5px}
+.slider > .fa:last-of-type { left: 5px}
+.slider .fa {
+    text-shadow: 5px 5px 5px #555;
+    cursor: pointer;
+}
+.slider .buttom-circles .buttom-circles-list {
+    font-size: 35px;
+}
+
+#bouton-modele{
+    border: 2px solid #0000d8;
+    border-radius: 5px;
+    color: #0000d8;
+    background: #9999e6;
+    padding: 3px 5px;
 }
 
 @media screen and (max-width: 812px) {
@@ -159,13 +244,12 @@ nav {
     nav{
         background: none;
         padding: 0;
+        margin: 0;
     }
     .text-style{
         padding: 5px 0 5px 0;
         margin: 10px 5px;
     }
-
-
 
     h1 {
         font-size: 42px;
@@ -214,14 +298,46 @@ nav {
         padding: auto;
         margin: auto;
     }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .main{
+         width: 100%;
+         padding: 0;
+         margin: 0;
+     }
+    .slider .buttom-circles {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        bottom: -80px;
+        color: #0000d8;
+    }
+    .slider > .fa {
+        font-size: 60px
+    }
+    .slider>.fa:hover{
+        font-size: 50px;
+
+    }
+    .slider .buttom-circles .buttom-circles-list {
+        font-size: 45px;
+    }
+    .slider{
+        position: absolute;
+    }
+    #bouton-modele{
+        border: 2px solid #0000d8;
+        border-radius: 5px;
+        color: #0000d8;
+        background: #9999e6;
+        padding: 3px 5px;
+    }
+    .desc-style{
+        font-size: 20px;
+        padding-top: 60%;
+    }
 }
 
-/* Media query for pads*/
-@media (max-width: 1338px) {
-
-}
-
-/*Media query for smartphone*/
-@media (max-width: 812px) {
-
-}

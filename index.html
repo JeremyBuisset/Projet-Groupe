@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Monda&display=swap" rel="stylesheet">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+
 </head>
 <body>
 <header>
@@ -38,11 +39,37 @@
         </div>
         <div id="hamburger-overlay"></div>
     </div>
-
 </header>
+<div class="main">
+    <div class="slider">
+        <ul class="slider-parent">
+            <li class="images-list" data-slider="1"></li>
+            <li class="images-list" data-slider="2"></li>
+            <li class="images-list" data-slider="3"></li>
+            <li class="images-list" data-slider="4"></li>
+        </ul>
+        <ol class="buttom-circles">
+            <li class="buttom-circles-list slider-active" data-slider="1"><i class="fa fa-circle-thin"></i></li>
+            <li class="buttom-circles-list" data-slider="2"><i class="fa fa-circle-thin"></i></li>
+            <li class="buttom-circles-list" data-slider="3"><i class="fa fa-circle-thin"></i></li>
+            <li class="buttom-circles-list" data-slider="4"></li>
+        </ol>
+        <i class="fa fa-chevron-right fa-5x"></i>
+        <i class="fa fa-chevron-left fa-5x"></i>
+    </div>
+</div>
+
+<p class="desc-style">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias aliquid assumenda at autem debitis deleniti,
+    dolor dolorem ducimus et ex exercitationem illo iure iusto, labore laboriosam maiores necessitatibus nemo nesciunt
+    nihil optio placeat recusandae rem vitae voluptatibus.
+</p>
+<div style="width: 100%; text-align: center; margin-bottom: 500px">
+    <a href="#" class="link-style"><span id="bouton-modele">Voir le modèle</span></a>
+</div>
 
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script  src="function.js"></script>
 <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
