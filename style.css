@@ -1,343 +1,170 @@
+/*BASES DU SITE A NE PAS MODIFIER*/
 body {
     width: 80%;
     margin: 0 10% 0 10%;
     padding: 0;
     background: #dddddd;
 }
-
 header {
     width: 100%;
-    background-image: url("pictures/Bannière.png");
+    background-image: url("pictures/Bannière(1).png");
     height: 176px;
     padding: 0;
     margin: 0;
 }
-
 footer {
     clear: both;
     width: 100%;
-
 }
 nav {
     width: 100%;
-    background: #0000d8;
+    background: #6e0001;
 }
-
+a{
+    text-decoration: none;
+}
 #banniere{
     width: 100%;
     height:auto;
     position: relative;
 }
-
-.link-style{
-    text-decoration: none;
-    color: #a4a4f6;
-    font-family: 'Monda', sans-serif;
-}
-
 .logo{
     height: 120px;
     width: auto;
-
+    text-align: left;
 }
-.text-style{
-    color: #a4a4f6;
-    padding: 1% 1% 1% 1%;
-    font-family: 'Monda', sans-serif;
-
-}
-
-.desc-style{
-    color: #0000a8;
-    padding: 1% 1% 1% 1%;
-    font-family: 'Monda', sans-serif;
-    text-align: center;
-    font-size: 20px;
-
-}
-
-
-#hamburger-content li{
+/*--------------------------------------------------------------------------------------------------------------------*/
+/* NAVIGATION BAR */
+#content li{
     display: inline-block;
     width: 15%;
+    height: 30px;
     text-align: center;
-}
+    margin: 0;
+    padding: 5px;
 
-#hamburger-content li:hover{
-    background: #0322ff;
-    color: #9999e6;
+    color: #b34e4a;
+    font-family: 'Monda', sans-serif;
+    text-decoration: none;
 }
-
+#content li:hover{
+    background: #5c0001;
+    color: #cd534f;
+}
 #nav-list{
     text-align: center;
-}
-
-#hamburger, #hamburger-content{
-    display: inline;
-}
-
-#hamburger-button{
-    display: none;
-    cursor: pointer;
-    background: none;
-    border:none;
-    font-size: 40px;
-    padding: 0;
-    vertical-align: top;
-    line-height: 47px;
-    float: right;
-    margin-right:36px ;
-    color: white;
-}
-
-#hamburger-overlay{
-    display: none;
-    position: fixed;
-    z-index: 2;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4);
-}
-
-#hamburger-sidebar{
-    display: none;
-    position: fixed;
-    width:84%;
-    z-index: 3;
-    height: 100%;
-    top:0;
-    left:0;
-    background-color: rgba(221, 221, 221, 0.82);
-    transform: translateX(-100%);
-    transition: transform 0.2s ease-out;
-}
-#hamburger-sidebar li{
-    display: block;
-}
-
-/* header du menu hamburger*/
-#hamburger-sidebar-header{
-    background-image: url("pictures/Bannière.png");
-    background-size: cover;
-    height: 148px;
-}
-
-#hamburger-sidebar-body{
-    padding: 16px 8px;
-    background: #dddddd;
-    height: 80%;
-}
-
-#hamburger-sidebar-body .button{
-    float: none;
-    display: block;
-    text-align: center;
     margin-top: 16px;
+    padding: 0;
     height: auto;
-    padding:10px;
-    line-height: inherit;
-
+}
+#content{
+    display: inline;
+    top:0;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+/* ELEMENTS A UTILSER EN COMMUN*/
+.text-style{
+    font-family: 'Monda', sans-serif;
+    color: #6e0001;
+    font-size: 20px;
 }
 
-.button{
-    color: #0000d8;
-    margin: 80px 20px 0 15px;
-    float: right;
-    border:2px solid #0000d8;
+.bouton{
+    color: #6e0001;
+    border:2px solid #6e0001;
     border-radius: 0.5em;
-    background: #8888cd;
+    background: #cd7b75;
     padding: 5px;
-    width: 150px;
     text-align: center;
     box-shadow:2px 1px 1px rgba(0,0,0,0.4);
+    width: auto;
 }
 
-.button:hover{
-    background: #7070a9;
-    color: #0314ec;
-    border-color: #0000b4;
+.bouton:hover{
+    background: #b32e26;
+    color: #490001;
+    border-color: #490001;
 }
-* {
-    box-sizing: border-box;
-    padding: 0
-}
+/*--------------------------------------------------------------------------------------------------------------------*/
+/* PARTIE MAIN PAGE*/
 
-ul, ol {
-    list-style: none
-}
-.main {
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-    color: #fff;
-    top:0;
 
-}
-.slider {
-    position: relative
-}
-.slider .slider-parent {
-    padding: 0;
-    display: flex
-}
-.slider .slider-parent .images-list {
-    background-size: cover;
-}
-.slider .slider-parent .images-list:first-of-type, .slider .slider-parent .images-list:last-of-type {
-    background-image: url(pictures/Speecar-Kesta.jpg)
-}
-.slider .slider-parent .images-list:nth-of-type(2) {
-    background-image: url(pictures/Speedcar-KestaII.jpg)
-}
-.slider .slider-parent .images-list:nth-of-type(3) {
-    background-image: url(pictures/Speedcar-KestaIII.jpg)
-}
-.slider .slider-parent .images-list:nth-of-type(4) {
-    background-image: url(pictures/Speecar-Kesta.jpg)
-}
-.slider .buttom-circles {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    bottom: 20px;
-    color: #0000d8;
-}
-.slider .buttom-circles .buttom-circles-list {
-    display: inline-block;
-}
-.slider .buttom-circles .buttom-circles-list:hover .fa:before, .slider
-.buttom-circles .buttom-circles-list.slider-active .fa:before {
-    content: "\f111";
-}
-.slider > .fa {
-    position: absolute;
-    top: 45%;
-    color: #0000d8 ;
-}
-.slider > .fa:first-of-type { right: 5px}
-.slider > .fa:last-of-type { left: 5px}
-.slider .fa {
-    text-shadow: 5px 5px 5px #555;
-    cursor: pointer;
-}
-.slider .buttom-circles .buttom-circles-list {
-    font-size: 35px;
-}
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*PARTIE CATALOGUE*/
 
-#bouton-modele{
-    border: 2px solid #0000d8;
-    border-radius: 5px;
-    color: #0000d8;
-    background: #9999e6;
-    padding: 3px 5px;
-}
 
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*PARTIE CARTE INTERACTIVE*/
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*PARTIE HISTORIQUE*/
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*PARTIE CONTACT*/
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*MEDIA QUERY POUR MOBILE ET TABLETTE*/
 @media screen and (max-width: 812px) {
+    /*BASE RESPONSIVE*/
     body{
         width:100%;
         padding: 0;
         margin: 0;
     }
-
     nav{
         background: none;
         padding: 0;
         margin: 0;
     }
-    .text-style{
-        padding: 5px 0 5px 0;
-        margin: 10px 5px;
+    header{
+        height: 120px;
+        padding-top: 10px;
+        margin-bottom: 200px;
     }
-
-    h1 {
-        font-size: 42px;
-        line-height: 56px;
-    }
-
-    #hamburger-content {
-        display: none;
-    }
-
-    #hamburger-button, #hamburger-sidebar,
-    .hamburger-activated #hamburger-overlay {
+    /*----------------------------------------------------------------------------------------------------------------*/
+    /* MENU DE NAVIGATION RESPONSIVE*/
+    #content li{
+        font-size: 20px;
         display: block;
+        width: 100%;
+        background: #6e0001;
+        overflow-wrap: normal;
     }
-
-    .hamburger-activated #hamburger-sidebar {
-        transform: translateX(0);
-    }
-    #hamburger-sidebar-body{
-        float: bottom;
-        text-align: center;
-    }
-    #hamburger-sidebar-header{
-        float: bottom;
-    }
-    #hamburger-sidebar li{
-        width:100%;
-        left:0;
-        background: none;
-        color: #0000d8;
-    }
-    #hamburger-sidebar li:hover{
-        background: none;
-        color: #0000d8;
-
+    #hamburger-content li:hover{
+        background: rgb(57, 0, 1);
+        color: #9f342c;
     }
     #nav-list{
         padding: 0;
         margin: 0;
     }
+    /*----------------------------------------------------------------------------------------------------------------*/
+    /*ELEMENTS EN COMMUN RESPONSIVE*/
 
-    .button{
-        border: 1px solid #0000d8;
-        border-radius: 2px;
-        background: #a4a4f6;
-        padding: auto;
-        margin: auto;
-    }
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-    .main{
-         width: 100%;
-         padding: 0;
-         margin: 0;
-     }
-    .slider .buttom-circles {
-        position: absolute;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        bottom: -80px;
-        color: #0000d8;
-    }
-    .slider > .fa {
-        font-size: 60px
-    }
-    .slider>.fa:hover{
-        font-size: 50px;
 
-    }
-    .slider .buttom-circles .buttom-circles-list {
-        font-size: 45px;
-    }
-    .slider{
-        position: absolute;
-    }
-    #bouton-modele{
-        border: 2px solid #0000d8;
-        border-radius: 5px;
-        color: #0000d8;
-        background: #9999e6;
-        padding: 3px 5px;
-    }
-    .desc-style{
-        font-size: 20px;
-        padding-top: 60%;
-    }
+    /*----------------------------------------------------------------------------------------------------------------*/
+    /* PARTIE MAIN PAGE RESPONSIVE*/
+
+
+    /*----------------------------------------------------------------------------------------------------------------*/
+    /*PARTIE CATALOGUE RESPONSIVE*/
+
+
+    /*----------------------------------------------------------------------------------------------------------------*/
+    /*PARTIE CARTE INTERACTIVE RESPONSIVE/
+
+
+    /*----------------------------------------------------------------------------------------------------------------*/
+    /*PARTIE HISTORIQUE RESPONSIVE*/
+
+
+    /*----------------------------------------------------------------------------------------------------------------*/
+    /*PARTIE CONTACT RESPONSIVE*/
+
+
+    /*----------------------------------------------------------------------------------------------------------------*/
 }
 
