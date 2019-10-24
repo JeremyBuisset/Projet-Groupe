@@ -209,10 +209,19 @@ img[id*="catalogue-icon"]{
     width: 100px;
 }
 
-.items{
-    width: 90%;
-    padding-top: 7%;
+.row{
+    margin-top: 10%;
 }
+
+.pic{
+border-radius: 5px;
+}
+
+.cataloguetitle{
+    color: #6e0001;
+}
+
+
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*PARTIE CARTE INTERACTIVE*/
