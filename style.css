@@ -183,6 +183,11 @@ a{
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*PARTIE CATALOGUE*/
 
+#maincatalogue{
+    background: #d0d0d0;
+    border-radius: 70%;
+}
+
 #choice{
     margin-top: 6%;
 }
@@ -214,34 +219,56 @@ img[id*="catalogue-icon"]{
 }
 
 .pic{
-border-radius: 5px;
+border-radius: 32px;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-.cataloguetitle{
+h1[class^="cataloguetitle"]{
     color: #6e0001;
 }
 
+.cataloguetitleun{
+    text-align: left;
+}
 
+.cataloguetitledeux{
+    text-align: right;
+}
+
+.end{
+    margin-bottom: 100px;
+}
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*PARTIE CARTE INTERACTIVE*/
-#map {
-    padding-top: 5px;
-    margin: 0 auto;
-    width: 600px;
-    height: 600px;
-}
 
-.main{
+#map{
     width: 100%;
     text-align: center;
 }
-
-.textemain {
-    text-align: center;
-    margin-bottom: 20px;
+#pictmap{
+    width: 60%;
+    height: auto;
+    display: inline-block;
+    vertical-align: top ;
 }
-
+#pictmap2{
+    width: 0;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+#legendelist{
+    list-style-type: none;
+    display:inline-block;
+}
+#main li{
+    font-family: 'Monda', sans-serif;
+    color: #6e0001;
+    font-size: 20px;
+}
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*PARTIE HISTORIQUE*/
 #voiture
@@ -521,10 +548,57 @@ label {
     /*----------------------------------------------------------------------------------------------------------------*/
     /*PARTIE CATALOGUE RESPONSIVE*/
 
+    #maincatalogue{
+        background: none;
+        margin: 0;
+        padding-top: 10px;
+    }
 
-    /*----------------------------------------------------------------------------------------------------------------*/
-    /*PARTIE CARTE INTERACTIVE RESPONSIVE/
+    #choice{
+        width: 100%;
+        background: #D0D0D0;
+        border-radius: 60%;
+    }
 
+    a[id$="link"]{
+        margin-top: 5%;
+        width: 30%;
+    }
+
+    h1[class^="cataloguetitle"]{
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .row{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 15%;
+    }
+
+    .pic{
+        width: 100%;
+        height: auto;
+    }
+
+    .end{
+        margin-bottom: 30px;
+    }
+
+    /*----------------------------------------
+    ------------------------------------------------------------------------*/
+    /*PARTIE CARTE INTERACTIVE RESPONSIVE*/
+    #pictmap{
+        width: 0;
+        height: auto;
+    }
+    #pictmap2{
+        width: 100%;
+        height: auto;
+    }
+    #legendelist{
+        list-style-type: none;
+    }
 
     /*----------------------------------------------------------------------------------------------------------------*/
     /*PARTIE HISTORIQUE RESPONSIVE*/
