@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Monda&display=swap" rel="stylesheet">
     <!-- ----------------------------------------------------------------------------------------------------------- -->
     <!--VOS CHANGEMENTS A AJOUTER-->
+    <script src="http://maps.google.com/maps/api/js"></script>
+    <script src="gmaps.js"></script>
 
 </head>
 <body>
@@ -32,18 +34,128 @@
     <div id="nepastoucher">
     <!--PARTIE CONTENUE -->
 
+        <div id="main">
+            <p class="text-style" style="text-align: center">Vous pouvez retrouver SpeedCar dans leurs Showrooms respesctifs à travers les grandes villes de France</p>
+            <div class="text-style textemain">
+                Les voitures SpeedCar ont besoin d'Électricité pour vivre, notre carte présente les bornes où vous pourrez recharger en toute sécurité votre SpeedCar
+            </div>
+            <div id="map">
+                <script>
+                    var map = new GMaps({
+                        el: '#map',
+                        lat: 46.70974,
+                        lng: 1.84521,
+                        zoom: 5.5
+                    });
 
+                    map.addMarker({
+                        lat: 48.871158,
+                        lng: 2.344970,
+                        title: 'Paris',
+                        infoWindow: {
+                            content: '<p>12 Boulevard Poissonnière 75000 Paris</p>' +
+                                '20 Bornes Disponibles'
+                        }
+                    });
 
+                    map.addMarker({
+                        lat: 50.641296,
+                        lng: 3.083103,
+                        title: 'Lille',
+                        infoWindow: {
+                            content: '<p>24 rue du Faubourg de Roubaix 59000 Lille</p>'+
+                                '10 Bornes Disponibles'
+                        }
+                    });
 
+                    map.addMarker({
+                        lat: 45.765861,
+                        lng: 4.834371,
+                        title: 'Lyon',
+                        infoWindow: {
+                            content: '<p>14 rue du Président Hériot 69000 Lyon</p>'+
+                                '15 Bornes Disponibles'
+                        }
+                    });
 
+                    map.addMarker({
+                        lat: 43.304905,
+                        lng: 5.398407,
+                        title: 'Marseille',
+                        infoWindow: {
+                            content: '<p>8 rue Lacépède 13000 Marseille</p>'+
+                                '8 Bornes Disponibles'
+                        }
+                    });
 
+                    map.addMarker({
+                        lat: 47.223241,
+                        lng: -1.557462,
+                        title: 'Nantes',
+                        infoWindow: {
+                            content: '<p>21 rue Paul Bellamy 44000 Nantes</p>'+
+                                '7 Bornes Disponibles'
+                        }
+                    });
 
+                    map.addMarker({
+                        lat: 43.60446,
+                        lng: 1.44425,
+                        title: 'Toulouse',
+                        infoWindow: {
+                            content: '<p>31000 Toulouse</p>'+
+                                '10 Bornes Disponibles'
+                        }
+                    });
 
+                    map.addMarker({
+                        lat: 43.70094,
+                        lng: 7.26839,
+                        title: 'Nice',
+                        infoWindow: {
+                            content: '<p>06000 Nice</p>' +
+                                '5 Bornes Disponibles'
+                        }
+                    });
 
+                    map.addMarker({
+                        lat: 43.61124,
+                        lng: 3.87673,
+                        title: 'Montpellier',
+                        infoWindow: {
+                            content: '<p>34000 Montpellier</p>' +
+                                '6 Bornes Disponibles'
 
+                        }
+                    });
 
+                    map.addMarker({
+                        lat: 48.58461,
+                        lng: 7.75071,
+                        title: 'Strasbourg',
+                        infoWindow: {
+                            content: '<p>67000 Strasbourg</p>' +
+                                '4 Bornes Disponibles'
 
-    <!--------------------------------------------------------------------------------------------------------------------->
+                        }
+                    });
+
+                    map.addMarker({
+                        lat: 48.11134,
+                        lng: -1.68002,
+                        title: 'Rennes',
+                        infoWindow: {
+                            content: '<p>35000 Rennes</p>' +
+                                '7 Bornes Disponibles'
+
+                        }
+                    });
+                </script>
+            </div>
+
+        </div>
+
+        <!--------------------------------------------------------------------------------------------------------------------->
 </div>
 
 <!-- PARTIE FOOTER-->
