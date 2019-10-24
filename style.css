@@ -145,7 +145,7 @@ a{
 .slider .slider-parent .images-list:nth-of-type(4) {
     background-image: url(pictures/Speecar-Kesta.jpg)
 }
-.slider .buttom-circles {
+.slider.buttom-circles {
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
@@ -155,7 +155,7 @@ a{
 .slider .buttom-circles .buttom-circles-list {
     display: inline-block;
 }
-.slider .buttom-circles .buttom-circles-list:hover .fa:before, .slider
+.slider.buttom-circles .buttom-circles-list:hover .fa:before, .slider
 .buttom-circles .buttom-circles-list.slider-active .fa:before {
     content: "\f111";
 }
@@ -247,18 +247,194 @@ border-radius: 5px;
     text-align: center;
 }
 
-.textemain{
+.textemain {
     text-align: center;
     margin-bottom: 20px;
-
+}
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*PARTIE HISTORIQUE*/
+.ch {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
 
+.compteur {
+    width: 25%;
+    padding-top: 10%;
+}
+
+.info1990 {
+    box-shadow: 10px 5px 5px red;
+    border-radius: 10%;
+    position: absolute;
+    text-align: center;
+    font-family: 'Monda', sans-serif;
+    left: 42%;
+    width: 15%;
+    font-size: 12px;
+    bottom: 0;
+}
+
+.historique{
+    text-shadow: 1px 1px 2px black;
+}
+
+.info2004
+{
+    font-size: 12px;
+    box-shadow: 10px 5px 5px red;
+    position: absolute;
+    text-align: center;
+    font-family: 'Monda', sans-serif;
+    width: 15%;
+    left: 42%;
+    bottom: -10%;
+}
+
+.info2013 {
+    font-size: 12px;
+    box-shadow: 10px 5px 5px red;
+    position: absolute;
+    text-align: center;
+    font-family: 'Monda', sans-serif;
+    width: 15%;
+    left: 42%;
+    bottom: 0;
+}
+
+.survol {
+    position: absolute;
+    text-align: center;
+    font-family: 'Monda', sans-serif;
+    text-shadow: 1px 1px 2px black;
+}
+
+.historique {
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    font-family: 'Monda', sans-serif;
+    left: 13%;
+    bottom: 74%;
+    font-size: 31px;
+}
+
+.survol {
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    font-family: 'Monda', sans-serif;
+    left: 22%;
+    bottom: 65%;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.p2004 p:hover {
+    font-size: 1.5em;
+}
+
+.p2019 p:hover {
+    font-size: 1.5em;
+}
+
+.p2013 p:hover {
+    font-size: 1.5em;
+}
+
+.p1990 p:hover {
+     font-size: 1.5em;
+}
+
+.p1990 {
+
+    text-align: center;
+    font-family: 'Monda', sans-serif;
+    width: 5%;
+    position: absolute;
+    left: 40%;
+    bottom: 19%;
+    color: indianred;
+    font-weight: bold;
+    text-shadow: 2px 1px 1px black;
+}
+
+.p2004 {
+    text-shadow: 2px 1px 1px black;
+    position: absolute;
+    font-weight: bold;
+    color: yellowgreen;
+    font-family: 'Monda', sans-serif;
+    left: 41%;
+    bottom: 39%;
+    width: 5%;
+}
+
+.p2013 {
+    position: absolute;
+    width: 5%;
+    font-weight: bold;
+    font-family: 'Monda', sans-serif;
+    bottom: 39%;
+    left: 54%;
+    color: orange;
+    text-shadow: 2px 1px 1px black;
+}
+
+.p2019 {
+    position: absolute;
+    width: 5%;
+    font-weight: bold;
+    color: red;
+    font-family: 'Monda', sans-serif;
+    left: 55%;
+    bottom: 19%;
+    text-shadow: 2px 1px 1px black;
+}
+
+#i1, #i2, #i3
+{
+    font-weight: bold;
+    border: black solid 1px;
+    opacity: 0;
+}
+
+.ch{
+    border-radius: 40%;
+    background: lightgray;
+
+}
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*PARTIE CONTACT*/
+form {
+   position: relative;
+    font-family: 'Monda', sans-serif;
+margin: 0;
+    font-weight: bold;
 
+}
+
+#contacteznous
+{
+    position: relative;
+    font-size: 30px;
+}
+
+.contact {
+    position: relative;
+}
+
+input, textarea {
+    position: relative;
+    background-color:#FFF3F3;
+    padding:3px;
+    border:1px solid rgba(62,89,255,0.51);
+    border-radius:5px;
+    box-shadow:1px 1px 2px #C0C0C0 inset;
+}
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*MEDIA QUERY POUR MOBILE ET TABLETTE*/
@@ -347,11 +523,155 @@ border-radius: 5px;
 
     /*----------------------------------------------------------------------------------------------------------------*/
     /*PARTIE HISTORIQUE RESPONSIVE*/
+    @media (max-width: 812px) {
+textarea{
+    width: 50%;
+}
+        .ch{
+            border-radius: 22%;
+            background: lightgray;
+        }
 
 
+        .survol {
+            font-weight: bold;
+            position: absolute;
+            text-align: center;
+            font-family: 'Monda', sans-serif;
+            left: 22%;
+            bottom: 76%;
+            font-size: 13px;
+        }
+
+        .historique {
+            text-shadow: 1px 1px 2px black;
+            font-weight: bold;
+            position: absolute;
+            text-align: center;
+            font-family: 'Monda', sans-serif;
+            left: 9%;
+            bottom: 87%;
+            font-size: 16px;
+        }
+        .compteur {
+            width: 65%;
+            padding-top: 10%;
+        }
+
+        .info1990 {
+            box-shadow: 10px 5px 5px red;
+            border-radius: 10%;
+            position: absolute;
+            text-align: center;
+            font-family: 'Monda', sans-serif;
+            font-size: 12px;
+            width: 50%;
+            left: 25%;
+            bottom: 2%;
+            text-shadow: 2px 1px 1px black;
+        }
+
+        .info2004
+        {
+            font-size: 12px;
+            box-shadow: 10px 5px 5px red;
+            position: absolute;
+            text-align: center;
+            font-family: 'Monda', sans-serif;
+            width: 50%;
+            left: 25%;
+            bottom: -12%;
+            text-shadow: 2px 1px 1px black;
+        }
+
+        .info2013 {
+            font-size: 12px;
+            box-shadow: 10px 5px 5px red;
+            position: absolute;
+            text-align: center;
+            font-family: 'Monda', sans-serif;
+            width: 37%;
+            left: 25%;
+            bottom: -10px;
+            text-shadow: 2px 1px 1px black;
+        }
+
+        .p1990 {
+            text-align: center;
+            font-size: 16px;
+            font-family: 'Monda', sans-serif;
+            width: 15%;
+            position: absolute;
+            left: 24%;
+            bottom: 25%;
+            color: indianred;
+            font-weight: bold;
+            text-shadow: 2px 1px 1px black;
+        }
+
+        .p2004 {
+            position: absolute;
+            font-weight: bold;
+            color: yellowgreen;
+            font-family: 'Monda', sans-serif;
+            left: 27%;
+            bottom: 49%;
+            width: 15%;
+            text-shadow: 2px 1px 1px black;
+        }
+
+        .p2013 {
+            position: absolute;
+            width: 15%;
+            font-weight: bold;
+            font-family: 'Monda', sans-serif;
+            bottom: 49%;
+            left: 59%;
+            color: orange;
+            text-shadow: 2px 1px 1px black;
+        }
+
+        .p2019 {
+            position: absolute;
+            width: 15%;
+            font-weight: bold;
+            color: red;
+            font-family: 'Monda', sans-serif;
+            left: 61%;
+            bottom: 26%;
+            text-shadow: 2px 1px 1px black;
+        }
+
+    }
     /*----------------------------------------------------------------------------------------------------------------*/
     /*PARTIE CONTACT RESPONSIVE*/
+    @media (max-width: 812px) {
+        form {
+            position: relative;
+            font-family: 'Monda', sans-serif;
+            margin: 0;
+            font-weight: bold;
 
+        }
+
+        #contacteznous {
+            position: relative;
+            font-size: 30px;
+        }
+
+        .contact {
+            position: relative;
+        }
+
+        input, textarea {
+            position: relative;
+            background-color: #FFF3F3;
+            padding: 3px;
+            border: 1px solid rgba(62, 89, 255, 0.51);
+            border-radius: 5px;
+            box-shadow: 1px 1px 2px #C0C0C0 inset;
+        }
+    }
 
     /*----------------------------------------------------------------------------------------------------------------*/
     /* PARTIE FOOTER RESPONSIVE*/
