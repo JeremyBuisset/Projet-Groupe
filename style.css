@@ -274,14 +274,16 @@ h1[class^="cataloguetitle"]{
 #voiture
 {
     position: absolute;
-    left: 10%;
-    opacity: 0.5;
-    bottom: 31%;
+    left: 8%;
+    opacity: 0.3;
+    bottom: 49%;
+    width: 20%;
+    height: 50%;
 }
 
 .ch {
-    width: 100%;
     position: relative;
+    width: 100%;
     text-align: center;
 }
 
@@ -291,42 +293,53 @@ h1[class^="cataloguetitle"]{
 }
 
 .info1990 {
-    box-shadow: 10px 5px 5px red;
-    border-radius: 10%;
+    box-shadow: 10px 5px 5px
+    black;
     position: absolute;
     text-align: center;
     font-family: 'Monda', sans-serif;
-    left: 42%;
-    width: 15%;
+    left: 18%;
+    width: 18%;
     font-size: 12px;
     bottom: 0;
 }
 
-.historique{
-    text-shadow: 1px 1px 2px black;
-}
 
 .info2004
 {
     font-size: 12px;
-    box-shadow: 10px 5px 5px red;
+    box-shadow: 10px 5px 5px
+    black;
     position: absolute;
     text-align: center;
     font-family: 'Monda', sans-serif;
-    width: 15%;
-    left: 42%;
-    bottom: -10%;
+    width: 18%;
+    left: 18%;
+    bottom: 0;
 }
 
 .info2013 {
     font-size: 12px;
-    box-shadow: 10px 5px 5px red;
+    box-shadow: 10px 5px 5px
+    black;
     position: absolute;
     text-align: center;
     font-family: 'Monda', sans-serif;
-    width: 15%;
-    left: 42%;
-    bottom: 0;
+    width: 18%;
+    left: 66%;
+    bottom: 20%;
+}
+
+.info2019 {
+    font-size: 12px;
+    box-shadow: 10px 5px 5px
+    black;
+    position: absolute;
+    text-align: center;
+    font-family: 'Monda', sans-serif;
+    width: 18%;
+    left: 66%;
+    bottom: 20%;
 }
 
 .survol {
@@ -344,6 +357,7 @@ h1[class^="cataloguetitle"]{
     left: 13%;
     bottom: 74%;
     font-size: 31px;
+    text-shadow: 1px 1px 2px black;
 }
 
 .survol {
@@ -374,7 +388,6 @@ h1[class^="cataloguetitle"]{
 }
 
 .p1990 {
-
     text-align: center;
     font-family: 'Monda', sans-serif;
     width: 5%;
@@ -419,10 +432,9 @@ h1[class^="cataloguetitle"]{
     text-shadow: 2px 1px 1px black;
 }
 
-#i1, #i2, #i3
+#i1, #i2, #i3, #i4
 {
-    font-weight: bold;
-    border: black solid 1px;
+    border: dashed black 1px;
     opacity: 0;
 }
 
@@ -609,7 +621,7 @@ label {
     left: 4%;
     opacity: 0.5;
     bottom: 60%;
-    height: 30%;
+    height: 39%;
     width: 30%;
 }
         .ch{
@@ -644,43 +656,53 @@ label {
         }
 
         .info1990 {
-            box-shadow: 10px 5px 5px red;
-            border-radius: 10%;
+            box-shadow: 10px 5px 5px
+            red;
             position: absolute;
             text-align: center;
             font-family: 'Monda', sans-serif;
             font-size: 12px;
-            width: 50%;
-            left: 25%;
-            bottom: 2%;
-            text-shadow: 2px 1px 1px black;
+            width: 88%;
+            left: 6%;
+            bottom: -201px;
         }
 
         .info2004
         {
             font-size: 12px;
-            box-shadow: 10px 5px 5px red;
+            box-shadow: 10px 5px 5px
+            red;
             position: absolute;
             text-align: center;
             font-family: 'Monda', sans-serif;
-            width: 50%;
-            left: 25%;
-            bottom: -12%;
-            text-shadow: 2px 1px 1px black;
+            width: 100%;
+            bottom: -113px;
+            height: 55%;
+            left: auto;
         }
 
         .info2013 {
             font-size: 12px;
-            box-shadow: 10px 5px 5px red;
+            box-shadow: 10px 5px 5px
+            red;
             position: absolute;
             text-align: center;
             font-family: 'Monda', sans-serif;
-            width: 37%;
-            left: 25%;
-            bottom: -10px;
-            text-shadow: 2px 1px 1px black;
+            width: 93%;
+            left: 3%;
+            bottom: -118px;
         }
-
+.info2019 {
+    font-size: 12px;
+    box-shadow: 10px 5px 5px
+    red;
+    position: absolute;
+    text-align: center;
+    font-family: 'Monda', sans-serif;
+    width: 93%;
+    left: 3%;
+    bottom: -118px;
+}
         .p1990 {
             text-align: center;
             font-size: 16px;
