@@ -8,7 +8,7 @@ body {
 header {
     width: 100%;
     background-image: url("pictures/Bannière(1).png");
-    height: 176px;
+    /*height: 176px;*/
     padding: 0;
     margin: 0;
 }
@@ -53,7 +53,7 @@ a{
 }
 #nav-list{
     text-align: center;
-    margin-top: 16px;
+    margin: 16px 0 0 0;
     padding: 0;
     height: auto;
 }
@@ -78,6 +78,7 @@ a{
     text-align: center;
     box-shadow:2px 1px 1px rgba(0,0,0,0.4);
     width: auto;
+    font-family: 'Monda', sans-serif;
 }
 
 .bouton:hover{
@@ -87,6 +88,77 @@ a{
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
 /* PARTIE MAIN PAGE*/
+
+.slider-list, ol {
+    list-style: none;
+    height:80px;
+}
+.main {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    color: #fff;
+    top:0;
+
+}
+.slider {
+    position: relative
+}
+.slider .slider-parent {
+    padding: 0;
+    display: flex;
+    margin:0;
+}
+.slider .slider-parent .images-list {
+    background-size: cover;
+}
+.slider .slider-parent .images-list:first-of-type, .slider .slider-parent .images-list:last-of-type {
+    background-image: url(pictures/Speecar-Kesta.jpg)
+}
+.slider .slider-parent .images-list:nth-of-type(2) {
+    background-image: url(pictures/Speedcar-KestaII.jpg)
+}
+.slider .slider-parent .images-list:nth-of-type(3) {
+    background-image: url(pictures/Speedcar-KestaIII.jpg)
+}
+.slider .slider-parent .images-list:nth-of-type(4) {
+    background-image: url(pictures/Speecar-Kesta.jpg)
+}
+.slider .buttom-circles {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: -50px;
+    color: #6e0001;
+}
+.slider .buttom-circles .buttom-circles-list {
+    display: inline-block;
+}
+.slider .buttom-circles .buttom-circles-list:hover .fa:before, .slider
+.buttom-circles .buttom-circles-list.slider-active .fa:before {
+    content: "\f111";
+}
+.slider > .fa {
+    position: absolute;
+    top: 45%;
+    color: #6e0001 ;
+}
+.slider > .fa:first-of-type { right: 5px}
+.slider > .fa:last-of-type { left: 5px}
+.slider .fa {
+    text-shadow: 5px 5px 5px #555;
+    cursor: pointer;
+}
+.slider .buttom-circles .buttom-circles-list {
+    font-size: 35px;
+}
+.bigdiv{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
 
 
 /*--------------------------------------------------------------------------------------------------------------------*/
@@ -120,18 +192,16 @@ a{
         margin: 0;
     }
     header{
-        height: 120px;
         padding-top: 10px;
-        margin-bottom: 200px;
     }
     /*----------------------------------------------------------------------------------------------------------------*/
     /* MENU DE NAVIGATION RESPONSIVE*/
     #content li{
-        font-size: 20px;
+        font-size: 18px;
         display: block;
         width: 100%;
         background: #6e0001;
-        overflow-wrap: normal;
+        padding: 2px 0;
     }
     #hamburger-content li:hover{
         background: rgb(57, 0, 1);
@@ -144,10 +214,41 @@ a{
     /*----------------------------------------------------------------------------------------------------------------*/
     /*ELEMENTS EN COMMUN RESPONSIVE*/
 
-
     /*----------------------------------------------------------------------------------------------------------------*/
     /* PARTIE MAIN PAGE RESPONSIVE*/
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .main{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .slider .buttom-circles {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        bottom: -60px;
+        color: #6e0001;
+        color:rgba(120,0,0,0.2);
+    }
+    .slider .buttom-circles:hover{
+        color:rgba(120,0,0,0.5);
+    }
+    .slider > .fa {
+        font-size: 60px;
+        color:rgba(120,0,0,0.5);
+    }
+    .slider>.fa:hover{
+        font-size: 50px;
+        color:rgba(120,0,0,0.8);
 
+    }
+    .slider .buttom-circles .buttom-circles-list {
+        font-size: 45px;
+    }
 
     /*----------------------------------------------------------------------------------------------------------------*/
     /*PARTIE CATALOGUE RESPONSIVE*/
@@ -155,8 +256,6 @@ a{
 
     /*----------------------------------------------------------------------------------------------------------------*/
     /*PARTIE CARTE INTERACTIVE RESPONSIVE/
-
-
     /*----------------------------------------------------------------------------------------------------------------*/
     /*PARTIE HISTORIQUE RESPONSIVE*/
 
@@ -167,4 +266,5 @@ a{
 
     /*----------------------------------------------------------------------------------------------------------------*/
 }
+
 
