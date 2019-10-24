@@ -145,7 +145,7 @@ a{
 .slider .slider-parent .images-list:nth-of-type(4) {
     background-image: url(pictures/Speecar-Kesta.jpg)
 }
-.slider .buttom-circles {
+.slider.buttom-circles {
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
@@ -155,7 +155,7 @@ a{
 .slider .buttom-circles .buttom-circles-list {
     display: inline-block;
 }
-.slider .buttom-circles .buttom-circles-list:hover .fa:before, .slider
+.slider.buttom-circles .buttom-circles-list:hover .fa:before, .slider
 .buttom-circles .buttom-circles-list.slider-active .fa:before {
     content: "\f111";
 }
@@ -237,10 +237,10 @@ border-radius: 5px;
     text-align: center;
 }
 
-.textemain{
+.textemain {
     text-align: center;
     margin-bottom: 20px;
-
+}
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*PARTIE HISTORIQUE*/
@@ -264,7 +264,7 @@ border-radius: 5px;
     left: 42%;
     width: 15%;
     font-size: 12px;
-    bottom: 0%;
+    bottom: 0;
 }
 
 .historique{
@@ -421,7 +421,7 @@ input, textarea {
     position: relative;
     background-color:#FFF3F3;
     padding:3px;
-    border:1px solid rgba(62,89,255,0.51)
+    border:1px solid rgba(62,89,255,0.51);
     border-radius:5px;
     box-shadow:1px 1px 2px #C0C0C0 inset;
 }
@@ -657,7 +657,7 @@ textarea{
             position: relative;
             background-color: #FFF3F3;
             padding: 3px;
-            border: 1px solid rgba(62, 89, 255, 0.51)
+            border: 1px solid rgba(62, 89, 255, 0.51);
             border-radius: 5px;
             box-shadow: 1px 1px 2px #C0C0C0 inset;
         }
