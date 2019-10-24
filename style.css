@@ -183,6 +183,36 @@ a{
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*PARTIE CATALOGUE*/
 
+#choice{
+    margin-top: 6%;
+}
+
+a[id$="link"]{
+    width: 10%;
+    display: inline-block;
+    text-decoration: none;
+    color: #6e0001;
+    font-weight: bold;
+    font-size: 100%;
+    font-family: 'Tahoma', sans-serif;
+}
+a[id$="link"]:hover{
+    color: #b32e26;
+    text-decoration-line: overline;
+}
+
+#catalogue-icon-city-car{
+    transform: scaleX(-1);
+}
+
+img[id*="catalogue-icon"]{
+    width: 100px;
+}
+
+.items{
+    width: 90%;
+    padding-top: 7%;
+}
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*PARTIE CARTE INTERACTIVE*/
