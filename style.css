@@ -183,6 +183,11 @@ a{
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*PARTIE CATALOGUE*/
 
+#maincatalogue{
+    background: #d0d0d0;
+    border-radius: 70%;
+}
+
 #choice{
     margin-top: 6%;
 }
@@ -215,13 +220,18 @@ img[id*="catalogue-icon"]{
 
 .pic{
 border-radius: 5px;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .cataloguetitle{
     color: #6e0001;
 }
 
-
+.end{
+    margin-bottom: 100px;
+}
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*PARTIE CARTE INTERACTIVE*/
