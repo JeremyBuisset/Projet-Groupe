@@ -273,7 +273,10 @@ h1[class^="cataloguetitle"]{
     list-style-type: none;
     display:inline-block;
 }
-#main li{
+#bloc{
+    padding: 105px 0 0 0;
+}
+#bloc li{
     font-family: 'Monda', sans-serif;
     color: #6e0001;
     font-size: 20px;
@@ -294,6 +297,7 @@ h1[class^="cataloguetitle"]{
     position: relative;
     width: 100%;
     text-align: center;
+    margin-top: 100px;
 }
 
 .compteur {
@@ -536,12 +540,12 @@ label {
         padding: 0;
     }
     #nepastoucher{
-        padding: 270px 0 100px 0;
+        padding: 300px 0 100px 0;
     }
     .main{
         width: 100%;
-        padding: 0;
         margin: 0;
+        padding-top:170px;
     }
     .slider .buttom-circles {
         position: absolute;
