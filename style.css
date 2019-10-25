@@ -184,7 +184,7 @@ a{
 /*PARTIE CATALOGUE*/
 
 #maincatalogue{
-    background: #d0d0d0;
+    background: #D0D0D0;
     border-radius: 70%;
 }
 
@@ -203,6 +203,7 @@ a[id$="link"]{
 }
 a[id$="link"]:hover{
     color: #b32e26;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     text-decoration-line: overline;
 }
 
@@ -219,14 +220,20 @@ img[id*="catalogue-icon"]{
 }
 
 .pic{
-border-radius: 32px;
+    border-radius: 32px;
     padding: 20px;
     padding-top: 0;
     padding-bottom: 0;
 }
 
+.pic:hover{
+    transform: scale(1.2);
+    transition: transform .3s;
+}
+
 h1[class^="cataloguetitle"]{
     color: #6e0001;
+    text-shadow: 1px 1px 2px black;
 }
 
 .cataloguetitleun{
@@ -568,7 +575,7 @@ label {
 
     #choice{
         width: 100%;
-        background: #D0D0D0;
+        background: url("pictures/catalogue/backgroundcatalogue.jpg");
         border-radius: 60%;
     }
 
