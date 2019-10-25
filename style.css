@@ -4,14 +4,16 @@ body {
     height: 100%;
     margin: 0 10% 0 10%;
     padding: 0;
-    background: #dddddd;
+    background: #f0f0f0;
 }
 header {
-    width: 100%;
+    width: 80%;
     background-image: url("pictures/Bannière(1).png");
     height: 176px;
     padding: 0;
     margin: 0;
+    position: fixed;
+    z-index: 2;
 }
 footer {
     width: 80%;
@@ -51,7 +53,7 @@ a{
     width: 100%;
     text-align: center;
     margin: 0;
-    padding: 0 0 100px 0;
+    padding: 100px 0 100px 0;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------*/
@@ -155,7 +157,7 @@ a{
 .slider .buttom-circles .buttom-circles-list {
     display: inline-block;
 }
-.slider.buttom-circles .buttom-circles-list:hover .fa:before, .slider
+.slider.buttom-circles .buttom-circles-list:hover .fa:before, .slider,
 .buttom-circles .buttom-circles-list.slider-active .fa:before {
     content: "\f111";
 }
@@ -191,7 +193,6 @@ a{
 #choice{
     margin-top: 6%;
 }
-
 a[id$="link"]{
     width: 10%;
     display: inline-block;
@@ -229,6 +230,7 @@ img[id*="catalogue-icon"]{
 .pic:hover{
     transform: scale(1.2);
     transition: transform .3s;
+    padding:0 20px;
 }
 
 h1[class^="cataloguetitle"]{
@@ -451,7 +453,7 @@ h1[class^="cataloguetitle"]{
 form {
    position: relative;
     font-family: 'Monda', sans-serif;
-margin: 0;
+    margin: 0;
     font-weight: bold;
 }
 
@@ -466,6 +468,7 @@ margin: 0;
     left: 34%;
     opacity: 0.5;
     bottom: 29%;
+    text-align: center;
 }
 .contact {
     border-radius: 40%;
@@ -505,6 +508,7 @@ label {
         height: 120px;
         padding-top: 0;
         margin-bottom: 150px;
+        width: 100%;
     }
     /*----------------------------------------------------------------------------------------------------------------*/
     /* MENU DE NAVIGATION RESPONSIVE*/
@@ -530,6 +534,9 @@ label {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+    }
+    #nepastoucher{
+        padding: 270px 0 100px 0;
     }
     .main{
         width: 100%;
@@ -591,8 +598,8 @@ label {
 
     .row{
         width: 100%;
-        margin: 0 auto;
-        margin-top: 15%;
+        margin: 15% auto 0 auto;
+
     }
 
     .pic{
@@ -604,8 +611,7 @@ label {
         margin-bottom: 30px;
     }
 
-    /*----------------------------------------
-    ------------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------------------------------------------------*/
     /*PARTIE CARTE INTERACTIVE RESPONSIVE*/
     #pictmap{
         width: 0;
@@ -780,11 +786,12 @@ label {
         }
 
         .contact {
-            position: absolute;
+            position: relative;
             left: 5%;
             bottom: 0;
             height: 60%;
             width: initial;
+            margin-top: 100px;
         }
 
         input, textarea {
